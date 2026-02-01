@@ -2,8 +2,28 @@
     title="Entre na sua Conta"
     primaryBtnText="Entrar"
     secondaryBtnText="Criar Conta"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disablePrimaryBtn]="!loginForm.valid"
 >
     <form [formGroup]="loginForm">
-        
+        <app-primary-input
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+            placeholder="utilizador@gmail.com"
+        >
+            <img src="/svg/email-icon.svg"/>
+        </app-primary-input>
+        <app-primary-input
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Palavra-Passe"
+        >
+            <img src="/svg/password-icon.svg"/>
+        </app-primary-input>
+        <span>Esqueceu-se da Palavra-Passe?</span>
     </form>
 </app-default-login-layout>
