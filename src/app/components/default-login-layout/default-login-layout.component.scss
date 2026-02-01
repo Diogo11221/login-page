@@ -16,7 +16,7 @@ main {
     }
 
     .main-section {
-        gap: 8px;
+        gap: 20px;
         flex-grow: 1;
         background-color: $gray-bg;
 
@@ -24,6 +24,10 @@ main {
         img {
             width: 50%;
             max-width: 600px;
+        }
+
+        h1 {
+            font-size: 30px;
         }
     }
 
@@ -33,12 +37,12 @@ main {
 
         img {
             margin-bottom: 30px;
-            width: 100%;
+            width: 60%;
             max-width: 300px;
         }
 
         h2 {
-            font-size: 28px;
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 45px;
         }
